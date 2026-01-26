@@ -19,8 +19,11 @@ import pprint
 # import matplotlib.pyplot as plt
 # import copy
 mystocks=['MSFT','AAPL','V','GOOG','KO','META']
+mystockdata = { }
 
 for stock in mystocks:
     dat = yf.Ticker(stock)
     last10 = dat.history(period="10d")
-    pprint.pprint(last10)
+    mystockdata[stock] = last10['Close']
+
+pprint.pprint(mystockdata)
