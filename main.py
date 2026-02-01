@@ -17,8 +17,9 @@ import yfinance as yf
 import pprint
 import numpy as np
 import matplotlib.pyplot as plt
+import copy
 
-# import copy
+
 mystocks=['MSFT','AAPL','V','GOOG','KO','META']
 mystockdata = { }
 
@@ -28,15 +29,23 @@ for stock in mystocks:
     mystockdata[stock] = []
     for price in last10['Close']:
         mystockdata[stock].append(price)
+    #print (last10['Close'])
     # mystockdata[stock] = last10['Close']
     mystocknp=np.array(mystockdata[stock])
-    print(mystocknp)
+
+    #Creates variable sorts closing price low to high, for use in plot below
+    hl =copy.copy(mystockdata[stock])
+    hl.sort()
+    #print(mystocknp)
+    print(hl)
 
 
-
-    plt.plot(mystocknp)
-    plt.ylabel('Closing Price')
-    plt.show()
+    #Creates matlib plot
+    # plt.plot(mystocknp)
+    # plt.ylabel('Closing Price')
+    # plt.xlabel('Trading Days Ago')
+    # plt.axis((1,10,))
+    # plt.show()
 
 
 
