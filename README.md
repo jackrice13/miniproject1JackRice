@@ -5,7 +5,7 @@
  
 # Project Title
  
-Mini Project 1 Stock Ticket Charts 
+Mini Project 1 Stock Ticker Charts 
 
 ## Description
  
