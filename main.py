@@ -37,15 +37,16 @@ for stock in mystocks:
     hl =copy.copy(mystockdata[stock])
     hl.sort()
     #print(mystocknp)
-    print(hl)
+    # print(hl)
 
 
-    #Creates matlib plot
-    # plt.plot(mystocknp)
-    # plt.ylabel('Closing Price')
-    # plt.xlabel('Trading Days Ago')
-    # plt.axis((1,10,))
-    # plt.show()
+    # Creates matlib plot
+    plt.title(stock)
+    plt.plot(mystocknp)
+    plt.ylabel('Closing Price')
+    plt.xlabel('Trading Days Ago')
+    plt.axis((1,10,hl[0],hl[-1]))
+    plt.show()
 
 
 
