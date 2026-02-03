@@ -25,7 +25,7 @@ chart = Path('charts')
 if not chart.exists():
     Path('charts').mkdir()
 
-mystocks=['MSFT','AAPL','V','GOOG','KO','META']
+mystocks=['MSFT','AAPL','V','GOOG','META']
 mystockdata = { }
 
 for stock in mystocks:
