@@ -14,7 +14,7 @@ This program queries Yahoo Finance for the last 10 closing prices for 5 stock ti
 ## Getting Started
  ##
 ### Dependencies
-Please install the pip requirementsf 
+Please install the pip requirements
 
 ```
 pip install -r requirements.txt

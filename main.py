@@ -53,7 +53,8 @@ for stock in mystocks:
     plt.axis((1,10,hl[0],hl[-1]))
     plt.savefig(f'charts/{stock}.png')
     plt.show()
-
+    print(f'saving image to charts/{stock}.png')
+print('Mission Complete')
 
 
 
