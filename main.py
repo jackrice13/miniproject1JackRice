@@ -18,7 +18,9 @@ import pprint
 import numpy as np
 import matplotlib.pyplot as plt
 import copy
+import pathlib
 
+pathlib.Path('charts').mkdir()
 
 mystocks=['MSFT','AAPL','V','GOOG','KO','META']
 mystockdata = { }
